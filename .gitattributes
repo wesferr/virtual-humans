@@ -1,0 +1,5 @@
+*PresetAvatars_Quest.zip filter=lfs diff=lfs merge=lfs -text
+*PresetAvatars_Rift.zip filter=lfs diff=lfs merge=lfs -text
+*PresetAvatars_Quest_Light.zip filter=lfs diff=lfs merge=lfs -text
+*PresetAvatars_Rift_Light.zip filter=lfs diff=lfs merge=lfs -text
+*smplx.fbx filter=lfs diff=lfs merge=lfs -text
