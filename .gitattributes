@@ -1,3 +1,8 @@
+Assets/Oculus/Avatar2_SampleAssets/SampleAssets/SampleAssets/PresetAvatars_Quest.zip filter=lfs diff=lfs merge=lfs -text
+Assets/Oculus/Avatar2_SampleAssets/SampleAssets/SampleAssets/PresetAvatars_Rift.zip filter=lfs diff=lfs merge=lfs -text
+Assets/Oculus/Avatar2_SampleAssets/SampleAssets/SampleAssets/PresetAvatars_Quest_Light.zip filter=lfs diff=lfs merge=lfs -text
+Assets/Oculus/Avatar2_SampleAssets/SampleAssets/SampleAssets/PresetAvatars_Rift_Light.zip filter=lfs diff=lfs merge=lfs -text
+Assets/MyAssets/Animations/smplx.fbx filter=lfs diff=lfs merge=lfs -text
 *PresetAvatars_Quest.zip filter=lfs diff=lfs merge=lfs -text
 *PresetAvatars_Rift.zip filter=lfs diff=lfs merge=lfs -text
 *PresetAvatars_Quest_Light.zip filter=lfs diff=lfs merge=lfs -text

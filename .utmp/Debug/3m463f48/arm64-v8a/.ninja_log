@@ -1,10 +1,10 @@
 # ninja log v5
-151	2448	7691450515923127	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	84e38eda321d2ee7
-242	2835	7691450519888330	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	5296802453396218
-113	2944	7691450520044708	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	3424bf5e18ccb950
-124	3067	7691450521712569	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	2b461e7bff509da1
-12	3152	7691450522863807	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	c8db300121691074
-161	3167	7691450523347683	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	ef1bedc63b176245
-2	3170	7691450522838686	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	d770d52cf4dea9f1
-137	3297	7691450523728603	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	50bd89cfc31cb39a
-3298	3510	7691450527058652	C:/Users/wesle/Documents/doutorado/AIVH/Library/PramData/AndroidApplicationController/Cache/com.Convai.ConvaiVR/gradle-project/unityLibrary/build/intermediates/cxx/Debug/3m463f48/obj/arm64-v8a/libgame.so	416f0fb0d5109af6
+96	1903	7766203162916978	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	74b73ccbb64edfd6
+17	1913	7766203163033076	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	c7fdb474e1066e24
+118	1934	7766203163260646	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	9dde42cf8d64834
+60	1947	7766203163366688	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	1f298c23ca57b621
+77	1959	7766203163519409	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	33cb699270b8bae0
+1	2036	7766203164324596	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	b96bf34040529ba2
+45	2136	7766203165363873	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	cede71960489972c
+29	2226	7766203166267329	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	2c5b5183a4a8d19f
+2227	2535	7766203169268950	C:/Users/wesle/Documents/doutorado/AIVH/Library/PramData/AndroidApplicationController/Cache/com.Convai.ConvaiVR/gradle-project/unityLibrary/build/intermediates/cxx/Debug/3m463f48/obj/arm64-v8a/libgame.so	1a75239d3719dd3c
