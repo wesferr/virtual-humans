@@ -36,7 +36,7 @@ public class EmotionManager : MonoBehaviour
 
     void OnAvatarCreated(UMAData umaData)
     {
-        animator = umaData.animator; // É o Animator novo, final
+        animator = umaData.animator;
         emoter = avatar.GetComponent<Emoter>();
 
         if (emoter == null)
@@ -53,7 +53,7 @@ public class EmotionManager : MonoBehaviour
         emoter.TurnOffAll();
 
         StartCoroutine(BlinkRoutine());
-        // StartCoroutine(PainRoutine());
+        StartCoroutine(MouthBreathingRotine());
     }
 
     public void EmotionTrigger(string emotion)
@@ -62,46 +62,39 @@ public class EmotionManager : MonoBehaviour
 
         if (emotion == "pain")
         {
-            float painDuration = Random.Range(painDurationRange.x, painDurationRange.y);
-            actual_emotion = emotion;
-            if (facial_expression == true)
-            {
-                emoter.ManualEmote(painExpressionName, ExpressionComponent.ExpressionHandler.OneWay, 0f, true);
-            }
-            if (body_expression == true)
-            {
-                animator.SetTrigger("idle_pain");
-            }
-            new WaitForSeconds(painDuration);
-
-            emoter.TurnOffAll();
-            if (actual_emotion != "neutral")
-                emoter.ManualEmote(actual_emotion, ExpressionComponent.ExpressionHandler.OneWay, 0f, true);
+            TriggerPain();
+        }
+        if (emotion == "sneeze")
+        {
+            // TriggerSneeze();
         }
 
     }
 
+    void TriggerPain(){
+        float painDuration = Random.Range(painDurationRange.x, painDurationRange.y);
+        if (facial_expression == true)
+        {
+            emoter.ManualEmote(painExpressionName, ExpressionComponent.ExpressionHandler.OneWay, 0f, true);
+        }
+        if (body_expression == true)
+        {
+            animator.SetTrigger("idle_pain");
+        }
+        new WaitForSeconds(painDuration);
 
-    System.Collections.IEnumerator PainRoutine(){
+        emoter.TurnOffAll();
+        if (actual_emotion != "neutral")
+            emoter.ManualEmote(actual_emotion, ExpressionComponent.ExpressionHandler.OneWay, 0f, true);
+    }
+
+    System.Collections.IEnumerator MouthBreathingRotine()
+    {
         while (true)
         {
-            float waitTime = Random.Range(painIntervalRange.x, painIntervalRange.y);
-            float painDuration = Random.Range(painDurationRange.x, painDurationRange.y);
-
-            yield return new WaitForSeconds(waitTime);
-            if (facial_expression == true){
-                emoter.ManualEmote(painExpressionName, ExpressionComponent.ExpressionHandler.OneWay, 0f, true);
-            }
-            if (body_expression == true){
-                animator.SetTrigger("idle_pain");
-            }
-            yield return new WaitForSeconds(painDuration);
-
-            emoter.TurnOffAll();
-            if (actual_emotion != "neutral")
-                emoter.ManualEmote(actual_emotion, ExpressionComponent.ExpressionHandler.OneWay, 0f, true);
-            
+            emoter.ManualEmote("MouthOpen", ExpressionComponent.ExpressionHandler.OneWay, 1f, true);
         }
+        
     }
 
     System.Collections.IEnumerator BlinkRoutine()
@@ -111,13 +104,8 @@ public class EmotionManager : MonoBehaviour
             float waitTime = Random.Range(blinkIntervalRange.x, blinkIntervalRange.y);
             float blinkDuration = Random.Range(blinkDurationRange.x, blinkDurationRange.y);
             yield return new WaitForSeconds(waitTime);
-            emoter.ManualEmote(blinkExpressionName, ExpressionComponent.ExpressionHandler.OneWay, 0f, true);
+            emoter.ManualEmote(blinkExpressionName, ExpressionComponent.ExpressionHandler.OneWay, blinkDuration, true);
             yield return new WaitForSeconds(blinkDuration);
-
-            
-            emoter.TurnOffAll();
-            if (actual_emotion != "neutral")
-                emoter.ManualEmote(actual_emotion, ExpressionComponent.ExpressionHandler.OneWay, 0f, true);
                 
         }
     }

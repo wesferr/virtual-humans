@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6f149611024868348970ada28ab73fd3
+guid: 046e89190c0ddb5438d1b5b7c0cc1b22
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -17,12 +17,7 @@ ModelImporter:
     removeConstantScaleCurves: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Cough' has import animation warnings that might
-      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
-      retargeting quality.\n\t'LeftLeg' has translation animation that will be discarded.\n\nClip
-      'UMA_Male_Rig|Cough' has import animation warnings that might lower retargeting
-      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'LeftLeg'
-      has translation animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -36,18 +31,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Cough
-      takeName: Cough
-      internalID: -560145760472405776
+      name: HeavyBreathing
+      takeName: HeavyBreathing
+      internalID: 2314886398755577477
       firstFrame: 0
-      lastFrame: 60
+      lastFrame: 96
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
