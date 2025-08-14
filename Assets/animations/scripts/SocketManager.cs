@@ -69,6 +69,7 @@ public class SocketManager : MonoBehaviour
     {
         HandleInput();
         ReconnectIfNeeded();
+        //if bool ver
         PlayNextAudio();
     }
 

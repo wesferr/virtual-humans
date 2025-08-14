@@ -64,35 +64,52 @@ public class EmotionManager : MonoBehaviour
         {
             TriggerPain();
         }
-        if (emotion == "sneeze")
+        if (emotion == "cough")
         {
-            // TriggerSneeze();
+            TriggerCough();
         }
 
+    }
+
+    void TriggerCough()
+    {
+        float painDuration = Random.Range(painDurationRange.x, painDurationRange.y);
+        if (facial_expression == true)
+        {
+            emoter.ManualEmote("cough", ExpressionComponent.ExpressionHandler.RoundTrip, painDuration);
+        }
+        if (body_expression == true)
+        {
+            animator.SetTrigger("idle_to_cough");
+        }
+        new WaitForSeconds(painDuration);
     }
 
     void TriggerPain(){
         float painDuration = Random.Range(painDurationRange.x, painDurationRange.y);
         if (facial_expression == true)
         {
-            emoter.ManualEmote(painExpressionName, ExpressionComponent.ExpressionHandler.OneWay, 0f, true);
+            emoter.ManualEmote("pain", ExpressionComponent.ExpressionHandler.RoundTrip, painDuration);
         }
         if (body_expression == true)
         {
-            animator.SetTrigger("idle_pain");
+            animator.SetTrigger("idle_to_pain");
         }
         new WaitForSeconds(painDuration);
-
-        emoter.TurnOffAll();
-        if (actual_emotion != "neutral")
-            emoter.ManualEmote(actual_emotion, ExpressionComponent.ExpressionHandler.OneWay, 0f, true);
     }
 
     System.Collections.IEnumerator MouthBreathingRotine()
     {
         while (true)
         {
-            emoter.ManualEmote("MouthOpen", ExpressionComponent.ExpressionHandler.OneWay, 1f, true);
+            float inhale_time = Random.Range(2f, 2.5f);
+            float exhale_time = Random.Range(2.5f, 3f);
+            float wait_time = Random.Range(0.2f, 0.4f);
+            emoter.ManualEmote("inhale_air", ExpressionComponent.ExpressionHandler.RoundTrip, inhale_time);
+            yield return new WaitForSeconds(inhale_time);
+            emoter.ManualEmote("exhale_air", ExpressionComponent.ExpressionHandler.RoundTrip, exhale_time);
+            yield return new WaitForSeconds(exhale_time);
+            yield return new WaitForSeconds(wait_time);
         }
         
     }
@@ -104,9 +121,8 @@ public class EmotionManager : MonoBehaviour
             float waitTime = Random.Range(blinkIntervalRange.x, blinkIntervalRange.y);
             float blinkDuration = Random.Range(blinkDurationRange.x, blinkDurationRange.y);
             yield return new WaitForSeconds(waitTime);
-            emoter.ManualEmote(blinkExpressionName, ExpressionComponent.ExpressionHandler.OneWay, blinkDuration, true);
+            emoter.ManualEmote(blinkExpressionName, ExpressionComponent.ExpressionHandler.RoundTrip, blinkDuration);
             yield return new WaitForSeconds(blinkDuration);
-                
         }
     }
 }
