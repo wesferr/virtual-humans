@@ -1,9 +1,5 @@
 # Virtual Humans: LLM vs. Human-Driven Conversation in VR Medical Simulation
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Language](https://img.shields.io/badge/Language-C%23-green.svg)](https://github.com/wesferr/virtual-humans)
-
-## Overview
 
 This repository contains the source code for a comprehensive research study examining the effectiveness of Large Language Model (LLM)-driven versus human-driven conversations in a Virtual Reality (VR) medical simulation environment. The project is presented as part of an SVR (IEEE Symposium on 3D User Interfaces) paper.
 
@@ -18,19 +14,11 @@ This work explores how conversational agents powered by LLMs compare to human in
 - **Advanced Character Animation** - Lip-sync animation, facial expressions, and head movement using SALSA LipSync Suite
 - **Shader-Based Visuals** - Custom shaders for realistic rendering and visual feedback
 
-## Project Structure
+### Planned Extended Versions of the Virtual Human Structure
 
-```
-virtual-humans/
-├── Assets/                    # Unity project assets
-│   ├── Scripts/              # C# game and simulation logic
-│   ├── Scenes/               # VR simulation scenes
-│   ├── Models/               # 3D character and environment models
-│   ├── Plugins/              # Third-party integrations (SALSA LipSync, etc.)
-│   └── Shaders/              # Custom ShaderLab materials and effects
-├── Documentation/            # Research documentation and guides
-└── README.md                 # This file
-```
+<div align="center" width="50%">
+  <img width="2132" height="1875" alt="pipeline" src="https://github.com/user-attachments/assets/7c162d09-0c9f-4b6a-afb3-0df54f45f732" />
+</div>
 
 ## Technology Stack
 
@@ -88,76 +76,14 @@ virtual-humans/
 - Natural language understanding and response generation
 - Consistent agent personality and behavior patterns
 
-### Human-Driven Conversation
-- Real-time human operator control of conversational agent
-- Human-in-the-loop dialogue management
-- Natural interaction patterns based on human expertise
-- Baseline for comparison studies
-
 ### User Study Framework
 - Quantitative metrics collection (task completion, response times)
 - Qualitative feedback gathering
 - Session logging and analytics
 - Statistical analysis tools
 
-## Data Analysis
-
-The `Notebooks/` directory contains Jupyter notebooks for:
-- Data processing and cleaning
-- Statistical analysis of study results
-- Visualization of comparative metrics
-- User feedback analysis
-
 ## Project Publications
 
 This work is presented in:
-- **Conference:** IEEE SVR (Symposium on 3D User Interfaces)
-- **Topic:** Comparative analysis of LLM-driven vs. human-driven conversation in VR medical training
-
-## Contributing
-
-Contributions are welcome! Please follow these guidelines:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## Code of Conduct
-
-This project is dedicated to creating a respectful and inclusive environment for all contributors. Please refer to our [Code of Conduct](CODE_OF_CONDUCT.md) for guidelines.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- **SALSA LipSync Suite** by Crazy Minnow Studio for character animation
-- **Unity Technologies** for the VR development platform
-- All research participants in the user studies
-- Faculty advisors and research supervisors
-
-## Contact & Support
-
-For questions, issues, or collaboration inquiries:
-- **GitHub Issues:** [Open an issue](https://github.com/wesferr/virtual-humans/issues)
-- **Repository:** [wesferr/virtual-humans](https://github.com/wesferr/virtual-humans)
-
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@inproceedings{ferreira2025llm_human_vr,
-  title={LLM vs. Human Driven Conversation: A User Study in Virtual Reality Medical Simulation},
-  author={Ferreira, Wesley},
-  booktitle={Proceedings of the IEEE Symposium on 3D User Interfaces (SVR)},
-  year={2025}
-}
-```
-
----
-
-**Last Updated:** June 2026
+- **Conference:** SVR – Symposium on Virtual and Augmented Reality
+- **Topic:** Evaluation of LLM-driven virtual human conversation in VR medical training
