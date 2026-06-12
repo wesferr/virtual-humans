@@ -47,7 +47,7 @@ MonoBehaviour:
     materialPropertyName: _MetallicGlossMap
     sourceTextureName: 
     Compression: 0
-    DownSample: 0
+    DownSample: 1
     ConvertRenderTexture: 0
     NonShaderTexture: 0
   MipMapBias: 0

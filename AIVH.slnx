@@ -1,0 +1,25 @@
+﻿<Solution>
+  <Project Path="UMA_Core_Editor.csproj" />
+  <Project Path="uLipSync.Editor.csproj" />
+  <Project Path="UMA_Core.csproj" />
+  <Project Path="Addressable_Editor.csproj" />
+  <Project Path="UMA_Examples.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="uLipSync.Runtime.csproj" />
+  <Project Path="UnityChan.csproj" />
+  <Project Path="Assembly-CSharp-firstpass.csproj" />
+  <Project Path="Shaderpackager-editor.csproj" />
+  <Project Path="uLipSync.Example.RuntimeProfile.Runtime.csproj" />
+  <Project Path="uLipSync.Samples.VRM.Editor.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj" />
+  <Project Path="uLipSync.Samples.VRM.Runtime.csproj" />
+  <Project Path="UMA_Examples_Editor.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj" />
+  <Project Path="uLipSync.Samples.RuntimeSetup.Runtime.csproj" />
+  <Project Path="uLipSync.Samples.Animator.Runtime.csproj" />
+  <Project Path="UMA_Content.csproj" />
+  <Project Path="uLipSync.Samples.Common.csproj" />
+  <Project Path="Assembly-CSharp-Editor-firstpass.csproj" />
+  <Project Path="uLipSync.Samples.WebGL.Runtime.csproj" />
+</Solution>
