@@ -1,7 +1,6 @@
 # Virtual Humans: LLM vs. Human-Driven Conversation in VR Medical Simulation
 
-
-This repository contains the source code for a comprehensive research study examining the effectiveness of Large Language Model (LLM)-driven versus human-driven conversations in a Virtual Reality (VR) medical simulation environment. The project is presented as part of an SVR (IEEE Symposium on 3D User Interfaces) paper.
+This repository contains the source code for a comprehensive research study examining the effectiveness of Large Language Models driven conversations in a Virtual Reality (VR) medical simulation environment. The project is presented as part of an SVR – Symposium on Virtual and Augmented Reality paper.
 
 This work explores how conversational agents powered by LLMs compare to human interaction patterns in clinical training scenarios, with implications for medical education, clinical simulation, and AI-assisted healthcare training.
 
@@ -39,7 +38,7 @@ This work explores how conversational agents powered by LLMs compare to human in
 
 ### Requirements
 - Unity 2021 LTS or later
-- VR-capable development environment (HTC Vive, Meta Quest, or Valve Index compatible)
+- VR-capable development environment: Meta Quest
 - C# 7.3 or later
 - Visual Studio 2019+ (recommended IDE)
 
@@ -66,7 +65,7 @@ This work explores how conversational agents powered by LLMs compare to human in
    - Refer to the documentation for detailed setup instructions
 
 5. **Load Initial Scene:**
-   - Navigate to `Assets/Scenes/` and open the main simulation scene
+   - Navigate to `Assets/MyAssets/Scenes/` and open the `AIScene` scene
 
 ## Research Study Components
 
